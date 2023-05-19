@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "e7fa4ff1-d998-423c-b716-ef96db822cf3",
+		"name": "Funciones Lambda Peticiones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12696666"
+	},
+	"item": [
+		{
+			"name": "Crear Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"The Legend of Zelda: Tears of the Kingdom  \",\r\n    \"genero\":\"Aventura\",\r\n    \"consola\":\"Nintendo Switch\",\r\n    \"precio\":\"75.00\",\r\n    \"proveedor\":\"Videos Games\",\r\n    \"lanzamiento\":\"2023\",\r\n    \"existencia\":\"200\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kc0eq0y6eg.execute-api.us-east-1.amazonaws.com/productos",
+					"protocol": "https",
+					"host": [
+						"kc0eq0y6eg",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Ali3n Isolation\",\r\n    \"genero\":\"Horror\",\r\n    \"consola\":\"PS4-XBOX ONE\",\r\n    \"precio\":\"29.99\",\r\n    \"proveedor\":\"Videos Games\",\r\n    \"lanzamiento\":\"2030\",\r\n    \"existencia\":\"5\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kc0eq0y6eg.execute-api.us-east-1.amazonaws.com/actualizarProducto?id=3165eb19-2af8-4874-b8c2-da728b13c47a",
+					"protocol": "https",
+					"host": [
+						"kc0eq0y6eg",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"actualizarProducto"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3165eb19-2af8-4874-b8c2-da728b13c47a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Producto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Alien Isolation\",\r\n    \"genero\":\"Horror\",\r\n    \"consola\":\"PS4-XBOX ONE\",\r\n    \"precio\":\"29.99\",\r\n    \"proveedor\":\"Videos Games\",\r\n    \"lanzamiento\":\"2011\",\r\n    \"existencia\":\"5\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kc0eq0y6eg.execute-api.us-east-1.amazonaws.com/deleteProductos?id=3165eb19-2af8-4874-b8c2-da728b13c47a",
+					"protocol": "https",
+					"host": [
+						"kc0eq0y6eg",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"deleteProductos"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3165eb19-2af8-4874-b8c2-da728b13c47a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Todos Productos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Ali3n Isolation\",\r\n    \"genero\":\"Horror\",\r\n    \"consola\":\"PS4-XBOX ONE\",\r\n    \"precio\":\"29.99\",\r\n    \"proveedor\":\"Videos Games\",\r\n    \"lanzamiento\":\"2030\",\r\n    \"existencia\":\"5\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kc0eq0y6eg.execute-api.us-east-1.amazonaws.com/ListarTodosProductos",
+					"protocol": "https",
+					"host": [
+						"kc0eq0y6eg",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"ListarTodosProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Producto por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Ali3n Isolation\",\r\n    \"genero\":\"Horror\",\r\n    \"consola\":\"PS4-XBOX ONE\",\r\n    \"precio\":\"29.99\",\r\n    \"proveedor\":\"Videos Games\",\r\n    \"lanzamiento\":\"2030\",\r\n    \"existencia\":\"5\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kc0eq0y6eg.execute-api.us-east-1.amazonaws.com/ListarIdProducto?id=bcdcb345-1b9a-4909-ab53-19c4c3c5e6e4",
+					"protocol": "https",
+					"host": [
+						"kc0eq0y6eg",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"ListarIdProducto"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "bcdcb345-1b9a-4909-ab53-19c4c3c5e6e4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
