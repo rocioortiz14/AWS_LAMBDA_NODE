@@ -26,7 +26,7 @@ Estas funciones están diseñadas para permitir la creación, actualización, el
 - Permite eliminar un producto de la base de datos.
 
 
-##Requisitos previos
+## Requisitos previos
 Antes de utilizar este proyecto, es necesario cumplir con los siguientes requisitos:
 
 Tener una cuenta en AWS con acceso a los servicios de Lambda y DynamoDB.
