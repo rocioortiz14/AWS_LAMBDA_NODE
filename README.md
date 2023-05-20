@@ -6,7 +6,7 @@ Estas funciones están diseñadas para permitir la creación, actualización, el
 ## Tabla de contenidos
 
 - [Funciones Lambda](#funciones)
-- [Requisitos previos](#requisitos previos)
+- [Requisitos previos](#requisitosprevios)
 ## Funciones
 - El proyecto cuenta con las siguientes funciones Lambda:
 
