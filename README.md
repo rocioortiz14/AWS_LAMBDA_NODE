@@ -6,7 +6,7 @@ Estas funciones están diseñadas para permitir la creación, actualización, el
 ## Tabla de contenidos
 
 - [Funciones Lambda](#funciones)
-- [Requisitos previos](#requisitos)
+- [Requisitos previos](#requisitosprevios)
 ## Funciones
 - El proyecto cuenta con las siguientes funciones Lambda:
 
@@ -24,6 +24,7 @@ Estas funciones están diseñadas para permitir la creación, actualización, el
 
 ## EliminarProducto: 
 - Permite eliminar un producto de la base de datos.
+
 
 ## Requisitos previos
 Antes de utilizar este proyecto, es necesario cumplir con los siguientes requisitos:
