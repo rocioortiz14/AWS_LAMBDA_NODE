@@ -15,7 +15,7 @@ export const handler = async (event) => {
 
     // Crea un nuevo comando de escaneo (ScanCommand) para obtener todos los elementos de la tabla "productos" de DynamoDB
 
-    const { Items: productos } = await dynamo.send(scanCommand);
+    const { Items: productos } = await dynamo.send(ScanCommand);
 
     // Envía el comando de escaneo a DynamoDB y obtiene los resultados
 
